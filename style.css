@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+ 
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+ 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* General Things */
+ 
+body {
+    background: #fff;
+    color: #666;
+    font: 13px/.95em 'Open Sans', sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;   
+}
+ 
+p, ul {
+    margin: 5px 0 0;
+}
+ 
+ul {
+    list-style: none;
+}
+
+strong {font-weight: bold; color: #fff;
+}
+ 
+a { color: #de5593; text-decoration: none; }
+a:hover {color: #e676a9;}
+
+h1,h2 {color: #de5593;}
+
+h1 {
+    display: none;
+}
+ 
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    line-height: 1.4em;
+    margin: 0 0 .4em;
+    font-weight: bold;
+}
+ 
+article {
+    
+    margin: 20px;
+    
+}
+
+
+.logo {
+    background: url('images/bgPink.jpg') repeat;
+    display: block;
+    text-align: center;
+}
+
+.logo img {max-width: 100%; max-height: 100%;}
+
+
+ 
+/* footer */
+ 
+footer {
+    border-top: 1px solid #de5593;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 0 0;
+    
+}
+
+.icons li {
+
+    float: left;
+    display: inline-block;
+    padding: 0 10px 0 0;
+}
+
+.icons li a img:hover {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.introText {
+    width: 100%;
+}
+
+/* documentation */
+
+.columnOne {
+    float: left;
+    margin-right: 2%;
+    width: 48%;
+}
+
+.columnTwo {
+    float: left;
+    margin-left: 2%;
+    width: 48%;
+}
+
+.clear {
+    clear: both;
+}
+
+.gallery_item {
+
+    margin: 0 0 20px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery_item:first-child {
+
+    margin: 20px 0 20px 0;
+}
+
+.gallery_item:last-child {
+    margin: 0;
+}
+
+.gallery_item img {
+
+     max-width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+/*media queries*/
+ 
+@media only screen and (min-width: 768px) {
+
+     
+    #wrapper {
+        position: relative;
+        width: 600px;
+        margin: auto;
+        padding: 20px 0 0 0;
+    }
+
+ 
+}
+
+@media only screen and (max-width: 500px) {
+    
+
+    .columnOne {
+        
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .columnTwo {
+        
+        margin-left: 0;
+        width: 100%;
+
+    }
+
+}
